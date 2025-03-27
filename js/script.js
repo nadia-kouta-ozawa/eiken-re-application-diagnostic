@@ -1,9 +1,12 @@
 (function () {
 
- const { createApp, ref, watch, computed } = Vue;
+ const { createApp, ref, watch, computed, onMounted } = Vue;
   
  createApp({
    setup() {
+     // 診断データ
+     const diagnosisData = ref(null);
+     
      // フォームデータ
      const grade = ref('');
      const age = ref('');
@@ -20,6 +23,18 @@
      
      // 診断結果の状態
      const diagnosisResult = ref('');
+     
+     // データの読み込み
+     onMounted(async () => {
+       try {
+         const response = await fetch('./data.json');
+         const data = await response.json();
+         diagnosisData.value = data;
+         console.log('診断データを読み込みました:', data);
+       } catch (error) {
+         console.error('診断データの読み込みに失敗しました:', error);
+       }
+     });
      
      // 選択タイプが変わったときに関連データをリセット
      watch(() => firstApp.value.type, (newType) => {
@@ -73,51 +88,119 @@
        return true;
      });
      
-     // 診断ロジック
+     // 年齢のフォーマット変換（APIに合わせる）
+     const formatAge = (ageValue) => {
+       if (ageValue === '20歳以下') {
+         return '20才以下';
+       } else {
+         return '21才以上';
+       }
+     };
+     
+     // 診断ロジック - JSONデータと照合
      const diagnose = () => {
        console.log('診断を実行します...');
-       console.log({
+       
+       if (!diagnosisData.value) {
+         alert('診断データがまだ読み込まれていません。しばらく待ってから再度お試しください。');
+         return;
+       }
+       
+       // 検索条件の作成
+       const searchCondition = {
          grade: grade.value,
-         age: age.value,
-         firstApp: firstApp.value,
-         secondApp: secondApp.value
+         ageGroup: formatAge(age.value),
+         firstApplication: {
+           type: firstApp.value.type
+         },
+         secondApplication: {
+           type: secondApp.value.type
+         }
+       };
+       
+       // 団体受験の場合の追加情報
+       if (firstApp.value.type === '団体') {
+         searchCondition.firstApplication.organizationType = firstApp.value.organizationType;
+         searchCondition.firstApplication.preference = firstApp.value.preference;
+       } else if (firstApp.value.type === '個人') {
+         // 個人受験の場合も preference が必要（メインコードではハードコードしていたが、JSONによる判定ではそれぞれのケースで異なる可能性がある）
+         searchCondition.firstApplication.preference = '本'; // 個人受験は「本」のみを想定
+       }
+       
+       if (secondApp.value.type === '団体') {
+         searchCondition.secondApplication.organizationType = secondApp.value.organizationType;
+         searchCondition.secondApplication.preference = secondApp.value.preference;
+       } else if (secondApp.value.type === '個人') {
+         searchCondition.secondApplication.preference = '本'; // 個人受験は「本」のみを想定
+       }
+       
+       console.log('検索条件:', searchCondition);
+       
+       // JSONデータと照合
+       const result = findDiagnosisResult(searchCondition);
+       
+       if (result) {
+         console.log('診断結果:', result);
+         
+         if (result.result === 'OK') {
+           diagnosisResult.value = 'ok';
+         } else if (result.result === 'NG') {
+           // NGの理由IDから対応する診断結果を設定
+           if (result.reasonId === 1) {
+             diagnosisResult.value = 'ng01';
+           } else if (result.reasonId === 2) {
+             diagnosisResult.value = 'ng02';
+           } else if (result.reasonId === 3) {
+             diagnosisResult.value = 'ng03';
+           } else if (result.reasonId === 4) {
+             diagnosisResult.value = 'ng04';
+           }
+         }
+       } else {
+         console.log('該当する診断結果が見つかりませんでした');
+         alert('該当する診断ケースが見つかりませんでした。入力内容をご確認ください。');
+       }
+     };
+     
+     // 条件に合致する診断結果を検索
+     const findDiagnosisResult = (condition) => {
+       if (!diagnosisData.value || !diagnosisData.value.diagnosisResults) {
+         return null;
+       }
+       
+       return diagnosisData.value.diagnosisResults.find(item => {
+         // 基本条件のチェック
+         if (item.grade !== condition.grade || item.ageGroup !== condition.ageGroup) {
+           return false;
+         }
+         
+         // 1つ目の受験条件チェック
+         const first = item.firstApplication;
+         const firstCondition = condition.firstApplication;
+         if (first.type !== firstCondition.type || first.preference !== firstCondition.preference) {
+           return false;
+         }
+         
+         // 団体受験の場合の追加チェック
+         if (first.type === '団体' && first.organizationType !== firstCondition.organizationType) {
+           return false;
+         }
+         
+         // 2つ目の受験条件チェック
+         const second = item.secondApplication;
+         const secondCondition = condition.secondApplication;
+         if (second.type !== secondCondition.type || second.preference !== secondCondition.preference) {
+           return false;
+         }
+         
+         // 団体受験の場合の追加チェック
+         if (second.type === '団体' && second.organizationType !== secondCondition.organizationType) {
+           return false;
+         }
+         
+         // すべての条件に一致
+         return true;
        });
-       
-       // 入力チェックは不要（ボタンが非活性の場合は実行されないため）
-       
-       // 個人受験の場合は診断をスキップ
-       if (firstApp.value.type === '個人' || secondApp.value.type === '個人') {
-         alert('この診断は団体受験の併願のみ対応しています。');
-         return;
-       }
-       
-       // 以下、診断ロジック
-       // 両方が「本」会場の場合
-       if (firstApp.value.preference === '本' && secondApp.value.preference === '本') {
-         diagnosisResult.value = 'ng01';
-         return;
-       }
-       
-       // 両方が「準」会場の場合
-       if (firstApp.value.preference === '準' && secondApp.value.preference === '準') {
-         diagnosisResult.value = 'ng02';
-         return;
-       }
-       
-       // 学校と塾の組み合わせの場合
-       if (firstApp.value.organizationType === '学校' && secondApp.value.organizationType === '塾') {
-         diagnosisResult.value = 'ng03';
-         return;
-       }
-       
-       // 他のケース
-       if (age.value === '20歳以下') {
-         diagnosisResult.value = 'ng04';
-         return;
-       }
-       
-       // すべての条件を通過した場合は併願可能
-       diagnosisResult.value = 'ok';
      };
 
      return {
@@ -132,5 +215,5 @@
    }
  }).mount("#app");
 
-
+ 
 })();
