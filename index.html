@@ -21,7 +21,7 @@
  <section id="app" class="co-app-diagnosis">
   <div class="l-inner">
    <!-- 診断 -->
-		<form action="" class="co-app-diagnosis__form">
+		<form action="javascript:void(0);" class="co-app-diagnosis__form" id="diagnosisForm">
 			<!-- 階級 -->
 			<fieldset>
 				<legend>受験級を選択してください。</legend>
@@ -116,6 +116,7 @@
 					<label for="secondApplication-preference2">準会場 : A~E日程</label>
 				</div>
 			</fieldset>
+
 			<button type="submit" class="submit-btn">
 				診断する
 			</button>
@@ -158,5 +159,10 @@
 		</div>
   </div>
  </section>
+
+ <script src="/js/libs/axios/1.7.9/axios.min.js" defer></script>
+ <script src="/js/libs/vue/3.5.13/vue.global.prod.min.js" defer></script>
+ <script src="/js/script.js" defer></script>
+
 </body>
 </html>
