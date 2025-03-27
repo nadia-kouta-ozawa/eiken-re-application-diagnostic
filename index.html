@@ -8,29 +8,93 @@
  <style>
 	.co-app-diagnosis__form {
 			margin-bottom: 30px;
-			.submit-btn {
-				margin-block: 30px;
-			}
-			fieldset + fieldset {
-				margin-top: 30px;
-			}
+	}
+	.co-app-diagnosis__form .submit-btn {
+		margin-block: 30px;
+		/* 可愛いボタンデザイン */
+		background: linear-gradient(to right, #FF9A9E, #FECFEF);
+		color: #fff;
+		border: none;
+		border-radius: 25px;
+		padding: 12px 30px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		box-shadow: 0 4px 15px rgba(255, 154, 158, 0.5);
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+	}
+	.co-app-diagnosis__form .submit-btn:hover:not(:disabled) {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 20px rgba(255, 154, 158, 0.6);
+	}
+	.co-app-diagnosis__form .submit-btn:active:not(:disabled) {
+		transform: translateY(1px);
+		box-shadow: 0 2px 10px rgba(255, 154, 158, 0.4);
+	}
+	.co-app-diagnosis__form .submit-btn::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+		transition: left 0.7s ease;
+	}
+	.co-app-diagnosis__form .submit-btn:hover:not(:disabled)::before {
+		left: 100%;
+	}
+	/* 非活性状態のスタイル */
+	.co-app-diagnosis__form .submit-btn:disabled {
+		background: linear-gradient(to right, #cccccc, #dddddd);
+		cursor: not-allowed;
+		box-shadow: none;
+		opacity: 0.7;
+	}
+	.co-app-diagnosis__form fieldset + fieldset {
+		margin-top: 30px;
+	}
+	.answer {
+		display: none;
+		border-radius: 10px;
+		padding: 15px;
+		margin-top: 20px;
+		background-color: #f8f8f8;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	}
+	.answer p {
+		margin: 0;
+		font-size: 16px;
+	}
+	.answer span {
+		display: inline-block;
+		margin-right: 10px;
+		padding: 3px 8px;
+		background-color: #ffaab3;
+		color: white;
+		border-radius: 4px;
+		font-weight: bold;
+		font-size: 14px;
 	}
  </style>
+ <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
  <section id="app" class="co-app-diagnosis">
   <div class="l-inner">
    <!-- 診断 -->
-		<form action="javascript:void(0);" class="co-app-diagnosis__form" id="diagnosisForm">
+		<form @submit.prevent="diagnose" class="co-app-diagnosis__form" id="diagnosisForm">
 			<!-- 階級 -->
 			<fieldset>
 				<legend>受験級を選択してください。</legend>
 				<div>
-					<input type="radio" id="g2-3" name="grade" value="2～3級" />
+					<input type="radio" id="g2-3" name="grade" value="2～3級" v-model="grade" />
 					<label for="g2-3">2~3級</label>
 				</div>
 				<div>
-					<input type="radio" id="g4-5" name="grade" value="4・5級" />
+					<input type="radio" id="g4-5" name="grade" value="4・5級" v-model="grade" />
 					<label for="g4-5">4・5級</label>
 				</div>
 			</fieldset>
@@ -38,11 +102,11 @@
 			<fieldset>
 				<legend>年齢を選択してください。</legend>
 				<div>
-					<input type="radio" id="under20" name="age" value="20歳以下" />
+					<input type="radio" id="under20" name="age" value="20歳以下" v-model="age" />
 					<label for="under20">20歳以下(2004年4月2日以降生まれ)</label>
 				</div>
 				<div>
-					<input type="radio" id="over20" name="age" value="20歳以上" />
+					<input type="radio" id="over20" name="age" value="20歳以上" v-model="age" />
 					<label for="over20">20歳以上(2004年4月1日以前生まれ)</label>
 				</div>
 			</fieldset>
@@ -51,33 +115,35 @@
 			<fieldset>
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
-					<input type="radio" id="firstApplication-type1" name="firstApplication-type" value="団体" />
+					<input type="radio" id="firstApplication-type1" name="firstApplication-type" value="団体" v-model="firstApp.type" />
 					<label for="firstApplication-type1">団体受験 : 学校や塾で申し込み</label>
 				</div>
 				<div>
-					<input type="radio" id="firstApplication-type2" name="firstApplication-type" value="個人" />
+					<input type="radio" id="firstApplication-type2" name="firstApplication-type" value="個人" v-model="firstApp.type" />
 					<label for="firstApplication-type2">個人受験 : 個人でインターネットやコンビニで申し込み</label>
 				</div>
 			</fieldset>
-			<fieldset>
+			<!-- 団体受験を選択した場合のみ表示 -->
+			<fieldset v-if="firstApp.type === '団体'">
 				<legend>（２）団体の区分を選択してください</legend>
 				<div>
-					<input type="radio" id="firstApplication-organizationType1" name="firstApplication-organizationType" value="学校" />
+					<input type="radio" id="firstApplication-organizationType1" name="firstApplication-organizationType" value="学校" v-model="firstApp.organizationType" />
 					<label for="firstApplication-organizationType1">学校など <br>小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業</label>
 				</div>
 				<div>
-					<input type="radio" id="firstApplication-organizationType2" name="firstApplication-organizationType" value="塾" />
+					<input type="radio" id="firstApplication-organizationType2" name="firstApplication-organizationType" value="塾" v-model="firstApp.organizationType" />
 					<label for="firstApplication-organizationType2">学習塾、予備校</label>
 				</div>
 			</fieldset>
-			<fieldset>
+			<!-- 団体受験を選択した場合のみ表示 -->
+			<fieldset v-if="firstApp.type === '団体'">
 				<legend>（３）受験方法の区分を選択してください</legend>
 				<div>
-					<input type="radio" id="firstApplication-preference1" name="firstApplication-preference" value="本" />
+					<input type="radio" id="firstApplication-preference1" name="firstApplication-preference" value="本" v-model="firstApp.preference" />
 					<label for="firstApplication-preference1">本会場 : F日程、本会場日程</label>
 				</div>
 				<div>
-					<input type="radio" id="firstApplication-preference2" name="firstApplication-preference" value="準" />
+					<input type="radio" id="firstApplication-preference2" name="firstApplication-preference" value="準" v-model="firstApp.preference" />
 					<label for="firstApplication-preference2">準会場 : A~E日程</label>
 				</div>
 			</fieldset>
@@ -86,38 +152,40 @@
 			<fieldset>
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
-					<input type="radio" id="secondApplication-type1" name="secondApplication-type" value="団体" />
+					<input type="radio" id="secondApplication-type1" name="secondApplication-type" value="団体" v-model="secondApp.type" />
 					<label for="secondApplication-type1">団体受験 : 学校や塾で申し込み</label>
 				</div>
 				<div>
-					<input type="radio" id="secondApplication-type2" name="secondApplication-type" value="個人" />
+					<input type="radio" id="secondApplication-type2" name="secondApplication-type" value="個人" v-model="secondApp.type" />
 					<label for="secondApplication-type2">個人受験 : 個人でインターネットやコンビニで申し込み</label>
 				</div>
 			</fieldset>
-			<fieldset>
+			<!-- 団体受験を選択した場合のみ表示 -->
+			<fieldset v-if="secondApp.type === '団体'">
 				<legend>（２）団体の区分を選択してください</legend>
 				<div>
-					<input type="radio" id="secondApplication-organizationType1" name="secondApplication-organizationType" value="学校" />
+					<input type="radio" id="secondApplication-organizationType1" name="secondApplication-organizationType" value="学校" v-model="secondApp.organizationType" />
 					<label for="secondApplication-organizationType1">学校など <br>小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業</label>
 				</div>
 				<div>
-					<input type="radio" id="secondApplication-organizationType2" name="secondApplication-organizationType" value="塾" />
+					<input type="radio" id="secondApplication-organizationType2" name="secondApplication-organizationType" value="塾" v-model="secondApp.organizationType" />
 					<label for="secondApplication-organizationType2">学習塾、予備校</label>
 				</div>
 			</fieldset>
-			<fieldset>
+			<!-- 団体受験を選択した場合のみ表示 -->
+			<fieldset v-if="secondApp.type === '団体'">
 				<legend>（３）受験方法の区分を選択してください</legend>
 				<div>
-					<input type="radio" id="secondApplication-preference1" name="secondApplication-preference" value="本" />
+					<input type="radio" id="secondApplication-preference1" name="secondApplication-preference" value="本" v-model="secondApp.preference" />
 					<label for="secondApplication-preference1">本会場 : F日程、本会場日程</label>
 				</div>
 				<div>
-					<input type="radio" id="secondApplication-preference2" name="secondApplication-preference" value="準" />
+					<input type="radio" id="secondApplication-preference2" name="secondApplication-preference" value="準" v-model="secondApp.preference" />
 					<label for="secondApplication-preference2">準会場 : A~E日程</label>
 				</div>
 			</fieldset>
 
-			<button type="submit" class="submit-btn">
+			<button type="submit" class="submit-btn" :disabled="!isFormValid">
 				診断する
 			</button>
 
@@ -125,32 +193,32 @@
     <!-- 診断結果 -->
     <div class="co-app-diagnosis__result">
 			<!-- OK -->
-			<div class="answer">
+			<div class="answer" v-show="diagnosisResult === 'ok'">
 				<p>併願が可能です。</p>
 			</div>
 			<!-- NG01 -->
-			<div class="answer">
+			<div class="answer" v-show="diagnosisResult === 'ng01'">
 				<p>
 					<span>本-本かぶり</span>
 					本命校同士の併願はできません。
 				</p>
 			</div>
 			<!-- NG02 -->
-			<div class="answer">
+			<div class="answer" v-show="diagnosisResult === 'ng02'">
 				<p>
 					<span>準-準かぶり</span>
 					準備校同士の併願はできません。
 				</p>
 			</div>
 			<!-- NG03 -->
-			<div class="answer">
+			<div class="answer" v-show="diagnosisResult === 'ng03'">
 				<p>
 					<span>二次日程かぶり（A）</span>
 					二次試験の日程が重複しています（Aパターン）。
 				</p>
 			</div>
 			<!-- NG04 -->
-			<div class="answer">
+			<div class="answer" v-show="diagnosisResult === 'ng04'">
 				<p>
 					<span>二次日程かぶり（B）</span>
 					二次試験の日程が重複しています（Bパターン）。
@@ -160,9 +228,7 @@
   </div>
  </section>
 
- <script src="/js/libs/axios/1.7.9/axios.min.js" defer></script>
- <script src="/js/libs/vue/3.5.13/vue.global.prod.min.js" defer></script>
- <script src="/js/script.js" defer></script>
+ <script src="/js/script.js"></script>
 
 </body>
 </html>
