@@ -6,6 +6,72 @@
  <title>重願診断ページ</title>
 </head>
 <body>
- <div id="app"></div>
+ <section id="app" class="co-app-diagnosis">
+  <div class="l-inner">
+   <!-- 診断 -->
+		<form action="" class="co-app-diagnosis__form">
+			<!-- 階級 -->
+			<fieldset>
+				<legend>グレード</legend>
+				<div>
+					<input type="radio" id="g2-3" name="grade" value="2～3級" />
+					<label for="g2-3">2~3級</label>
+				</div>
+				<div>
+					<input type="radio" id="g4-5" name="grade" value="4~5級" />
+					<label for="g4-5">4~5級</label>
+				</div>
+			</fieldset>
+			<!-- 年齢 -->
+			<fieldset>
+				<legend>年齢</legend>
+				<div>
+					<input type="radio" id="under20" name="age" value="20歳以下" />
+					<label for="under20">20歳以下</label>
+				</div>
+				<div>
+					<input type="radio" id="over20" name="age" value="20歳以上" />
+					<label for="over20">20歳以上</label>
+				</div>
+			</fieldset>
+
+		</form>
+    <!-- 診断結果 -->
+    <div class="co-app-diagnosis__result">
+			<!-- OK -->
+			<div class="answer">
+				<p>併願が可能です。</p>
+			</div>
+			<!-- NG01 -->
+			<div class="answer">
+				<p>
+					<span>本-本かぶり</span>
+					本命校同士の併願はできません。
+				</p>
+			</div>
+			<!-- NG02 -->
+			<div class="answer">
+				<p>
+					<span>準-準かぶり</span>
+					準備校同士の併願はできません。
+				</p>
+			</div>
+			<!-- NG03 -->
+			<div class="answer">
+				<p>
+					<span>二次日程かぶり（A）</span>
+					二次試験の日程が重複しています（Aパターン）。
+				</p>
+			</div>
+			<!-- NG04 -->
+			<div class="answer">
+				<p>
+					<span>二次日程かぶり（B）</span>
+					二次試験の日程が重複しています（Bパターン）。
+				</p>
+			</div>
+		</div>
+  </div>
+ </section>
 </body>
 </html>
