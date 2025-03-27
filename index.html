@@ -3,7 +3,19 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>重願診断ページ</title>
+ <title>重願可否診断ページ</title>
+
+ <style>
+	.co-app-diagnosis__form {
+			margin-bottom: 30px;
+			.submit-btn {
+				margin-block: 30px;
+			}
+			fieldset + fieldset {
+				margin-top: 30px;
+			}
+	}
+ </style>
 </head>
 <body>
  <section id="app" class="co-app-diagnosis">
@@ -12,28 +24,101 @@
 		<form action="" class="co-app-diagnosis__form">
 			<!-- 階級 -->
 			<fieldset>
-				<legend>グレード</legend>
+				<legend>受験級を選択してください。</legend>
 				<div>
 					<input type="radio" id="g2-3" name="grade" value="2～3級" />
 					<label for="g2-3">2~3級</label>
 				</div>
 				<div>
-					<input type="radio" id="g4-5" name="grade" value="4~5級" />
-					<label for="g4-5">4~5級</label>
+					<input type="radio" id="g4-5" name="grade" value="4・5級" />
+					<label for="g4-5">4・5級</label>
 				</div>
 			</fieldset>
 			<!-- 年齢 -->
 			<fieldset>
-				<legend>年齢</legend>
+				<legend>年齢を選択してください。</legend>
 				<div>
 					<input type="radio" id="under20" name="age" value="20歳以下" />
-					<label for="under20">20歳以下</label>
+					<label for="under20">20歳以下(2004年4月2日以降生まれ)</label>
 				</div>
 				<div>
 					<input type="radio" id="over20" name="age" value="20歳以上" />
-					<label for="over20">20歳以上</label>
+					<label for="over20">20歳以上(2004年4月1日以前生まれ)</label>
 				</div>
 			</fieldset>
+			<p>1つ目の受験について</p>
+			<hr>
+			<fieldset>
+				<legend>（１）受験方法を選択してください</legend>
+				<div>
+					<input type="radio" id="firstApplication-type1" name="firstApplication-type" value="団体" />
+					<label for="firstApplication-type1">団体受験 : 学校や塾で申し込み</label>
+				</div>
+				<div>
+					<input type="radio" id="firstApplication-type2" name="firstApplication-type" value="個人" />
+					<label for="firstApplication-type2">個人受験 : 個人でインターネットやコンビニで申し込み</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>（２）団体の区分を選択してください</legend>
+				<div>
+					<input type="radio" id="firstApplication-organizationType1" name="firstApplication-organizationType" value="学校" />
+					<label for="firstApplication-organizationType1">学校など <br>小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業</label>
+				</div>
+				<div>
+					<input type="radio" id="firstApplication-organizationType2" name="firstApplication-organizationType" value="塾" />
+					<label for="firstApplication-organizationType2">学習塾、予備校</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>（３）受験方法の区分を選択してください</legend>
+				<div>
+					<input type="radio" id="firstApplication-preference1" name="firstApplication-preference" value="本" />
+					<label for="firstApplication-preference1">本会場 : F日程、本会場日程</label>
+				</div>
+				<div>
+					<input type="radio" id="firstApplication-preference2" name="firstApplication-preference" value="準" />
+					<label for="firstApplication-preference2">準会場 : A~E日程</label>
+				</div>
+			</fieldset>
+			<p>2つ目の受験について</p>
+			<hr>
+			<fieldset>
+				<legend>（１）受験方法を選択してください</legend>
+				<div>
+					<input type="radio" id="secondApplication-type1" name="secondApplication-type" value="団体" />
+					<label for="secondApplication-type1">団体受験 : 学校や塾で申し込み</label>
+				</div>
+				<div>
+					<input type="radio" id="secondApplication-type2" name="secondApplication-type" value="個人" />
+					<label for="secondApplication-type2">個人受験 : 個人でインターネットやコンビニで申し込み</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>（２）団体の区分を選択してください</legend>
+				<div>
+					<input type="radio" id="secondApplication-organizationType1" name="secondApplication-organizationType" value="学校" />
+					<label for="secondApplication-organizationType1">学校など <br>小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業</label>
+				</div>
+				<div>
+					<input type="radio" id="secondApplication-organizationType2" name="secondApplication-organizationType" value="塾" />
+					<label for="secondApplication-organizationType2">学習塾、予備校</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>（３）受験方法の区分を選択してください</legend>
+				<div>
+					<input type="radio" id="secondApplication-preference1" name="secondApplication-preference" value="本" />
+					<label for="secondApplication-preference1">本会場 : F日程、本会場日程</label>
+				</div>
+				<div>
+					<input type="radio" id="secondApplication-preference2" name="secondApplication-preference" value="準" />
+					<label for="secondApplication-preference2">準会場 : A~E日程</label>
+				</div>
+			</fieldset>
+			<button type="submit" class="submit-btn">
+				診断する
+			</button>
 
 		</form>
     <!-- 診断結果 -->

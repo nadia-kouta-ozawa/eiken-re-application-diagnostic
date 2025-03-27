@@ -964,9 +964,9 @@
      "reasonId": 1,
      "reasonName": "本-本かぶり"
    },
-  // 4～5級 20才以下のデータ
+  // 4・5級 20才以下のデータ
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
@@ -983,7 +983,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
@@ -1001,7 +1001,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
@@ -1019,7 +1019,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
@@ -1037,7 +1037,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
@@ -1055,7 +1055,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1073,7 +1073,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1092,7 +1092,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1111,7 +1111,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1130,7 +1130,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1149,7 +1149,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1167,7 +1167,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1186,7 +1186,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1205,7 +1205,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1224,7 +1224,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1243,7 +1243,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1261,7 +1261,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1280,7 +1280,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1299,7 +1299,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1318,7 +1318,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1337,7 +1337,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1355,7 +1355,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
@@ -1374,103 +1374,11 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4～5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4～5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-// 4～5級 21才以上のデータ
-   {
-     "grade": "4～5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4～5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "preference": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4～5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
        "preference": "本",
        "schedule": "-"
      },
@@ -1485,7 +1393,99 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "preference": "準",
+       "schedule": "-"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "4・5級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+// 4・5級 21才以上のデータ
+   {
+     "grade": "4・5級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "個人",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "secondApplication": {
+       "type": "個人",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "4・5級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "個人",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "preference": "準",
+       "schedule": "-"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "4・5級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "個人",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "preference": "本",
+       "schedule": "-"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
@@ -1503,7 +1503,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
@@ -1521,7 +1521,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1539,7 +1539,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1558,7 +1558,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1577,7 +1577,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1596,7 +1596,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1615,7 +1615,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1633,7 +1633,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1652,7 +1652,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1671,7 +1671,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1690,7 +1690,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1709,7 +1709,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1727,7 +1727,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1746,7 +1746,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1765,7 +1765,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1784,7 +1784,7 @@
      "reasonName": "準-準かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1803,7 +1803,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1821,7 +1821,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1840,7 +1840,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1859,7 +1859,7 @@
      "reasonName": "本-本かぶり"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
@@ -1878,7 +1878,7 @@
      "reasonName": "重願可能"
    },
    {
-     "grade": "4～5級",
+     "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "団体",
