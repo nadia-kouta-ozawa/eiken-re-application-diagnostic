@@ -1,3 +1,7 @@
+/**
+ * @description Vue.jsを使用した申し込み診断アプリケーション。
+ * ユーザーが入力したデータに基づいて、申し込みの重複可否を診断します。
+ */
 (function () {
 
   const { createApp, ref, watch, computed, onMounted } = Vue;
@@ -6,27 +10,36 @@
     setup() {
       // データ読み込み状態の管理
       const isLoading = ref(true);
+      
       const loadError = ref(false);
+      
       const diagnosisData = ref(null);
       
       // フォームデータ
       const grade = ref('');
+      
       const age = ref('');
+      
       const firstApp = ref({
         type: '',
         organizationType: '',
         venue: ''
       });
+      
       const secondApp = ref({
         type: '',
         organizationType: '',
         venue: ''
       });
       
-      // 診断結果の状態
       const diagnosisResult = ref('');
       
-      // JSONデータを読み込む
+      /**
+       * JSONデータを読み込む非同期関数
+       * @async
+       * @function
+       * @returns {Promise<void>}
+       */
       const loadDiagnosisData = async () => {
         try {
           isLoading.value = true;
@@ -58,12 +71,13 @@
         }
       };
       
-      // コンポーネントがマウントされたときにデータを読み込む
       onMounted(() => {
         loadDiagnosisData();
       });
 
-      // フォーム全体の変更を監視、変更されたらanswerクラスを非表示
+      /**
+       * フォーム全体の変更を監視し、変更されたら診断結果をリセット
+       */
       watch(
         [grade, age, firstApp, secondApp],
         () => {
@@ -72,7 +86,9 @@
         { deep: true }
       );
 
-      // 選択タイプが変わったときに関連データをリセット
+      /**
+       * 1回目申し込みの選択タイプが変わったときに関連データをリセット
+       */
       watch(() => firstApp.value.type, (newType) => {
         if (newType !== '団体') {
           firstApp.value.organizationType = '';
@@ -80,6 +96,9 @@
         }
       });
       
+      /**
+       * 2回目申し込みの選択タイプが変わったときに関連データをリセット
+       */
       watch(() => secondApp.value.type, (newType) => {
         if (newType !== '団体') {
           secondApp.value.organizationType = '';
@@ -87,7 +106,11 @@
         }
       });
       
-      // フォームの入力チェック
+      /**
+       * フォームが有効かどうかを判定する算出プロパティ
+       * すべての必須項目が入力されているかを確認します
+       * @type {import('vue').ComputedRef<boolean>}
+       */
       const isFormValid = computed(() => {
         // 基本情報のチェック
         if (!grade.value || !age.value) {
@@ -122,8 +145,12 @@
         return true;
       });
       
-      
-      // 診断ロジック - JSONデータと照合
+      /**
+       * 診断を実行するメソッド
+       * フォームデータを基に診断結果を検索して設定します
+       * @function
+       * @returns {void}
+       */
       const diagnose = () => {
         console.log('診断を実行します...');
         
@@ -185,7 +212,16 @@
         }
       };
       
-      // 条件に合致する診断結果を検索
+      /**
+       * 指定された条件に合致する診断結果を検索する関数
+       * @function
+       * @param {Object} condition - 検索条件
+       * @param {string} condition.grade - 級区分
+       * @param {string} condition.ageGroup - 年齢区分
+       * @param {Object} condition.firstApplication - 1回目申し込み条件
+       * @param {Object} condition.secondApplication - 2回目申し込み条件
+       * @returns {Object|null} 見つかった診断結果、または見つからない場合はnull
+       */
       const findDiagnosisResult = (condition) => {
         if (!diagnosisData.value || !diagnosisData.value.diagnosisResults) {
           return null;
@@ -226,6 +262,7 @@
         });
       };
 
+      // テンプレートで使用するプロパティとメソッドを公開
       return {
         isLoading,
         loadError,
