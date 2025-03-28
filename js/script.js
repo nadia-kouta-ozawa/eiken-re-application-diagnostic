@@ -15,12 +15,12 @@
       const firstApp = ref({
         type: '',
         organizationType: '',
-        preference: ''
+        venue: ''
       });
       const secondApp = ref({
         type: '',
         organizationType: '',
-        preference: ''
+        venue: ''
       });
       
       // 診断結果の状態
@@ -67,14 +67,14 @@
       watch(() => firstApp.value.type, (newType) => {
         if (newType !== '団体') {
           firstApp.value.organizationType = '';
-          firstApp.value.preference = '';
+          firstApp.value.venue = '';
         }
       });
       
       watch(() => secondApp.value.type, (newType) => {
         if (newType !== '団体') {
           secondApp.value.organizationType = '';
-          secondApp.value.preference = '';
+          secondApp.value.venue = '';
         }
       });
       
@@ -92,7 +92,7 @@
         
         // 団体受験の場合は団体区分と受験方法区分も必須
         if (firstApp.value.type === '団体') {
-          if (!firstApp.value.organizationType || !firstApp.value.preference) {
+          if (!firstApp.value.organizationType || !firstApp.value.venue) {
             return false;
           }
         }
@@ -104,7 +104,7 @@
         
         // 団体受験の場合は団体区分と受験方法区分も必須
         if (secondApp.value.type === '団体') {
-          if (!secondApp.value.organizationType || !secondApp.value.preference) {
+          if (!secondApp.value.organizationType || !secondApp.value.venue) {
             return false;
           }
         }
@@ -141,16 +141,16 @@
         // 団体受験の場合の追加情報
         if (firstApp.value.type === '団体') {
           searchCondition.firstApplication.organizationType = firstApp.value.organizationType;
-          searchCondition.firstApplication.preference = firstApp.value.preference;
+          searchCondition.firstApplication.venue = firstApp.value.venue;
         } else if (firstApp.value.type === '個人') {
-          searchCondition.firstApplication.preference = '本';
+          searchCondition.firstApplication.venue = '本';
         }
         
         if (secondApp.value.type === '団体') {
           searchCondition.secondApplication.organizationType = secondApp.value.organizationType;
-          searchCondition.secondApplication.preference = secondApp.value.preference;
+          searchCondition.secondApplication.venue = secondApp.value.venue;
         } else if (secondApp.value.type === '個人') {
-          searchCondition.secondApplication.preference = '本';
+          searchCondition.secondApplication.venue = '本';
         }
         
         console.log('検索条件:', searchCondition);
@@ -205,7 +205,7 @@
           // 1つ目の受験条件チェック
           const first = item.firstApplication;
           const firstCondition = condition.firstApplication;
-          if (first.type !== firstCondition.type || first.preference !== firstCondition.preference) {
+          if (first.type !== firstCondition.type || first.venue !== firstCondition.venue) {
             return false;
           }
           
@@ -217,7 +217,7 @@
           // 2つ目の受験条件チェック
           const second = item.secondApplication;
           const secondCondition = condition.secondApplication;
-          if (second.type !== secondCondition.type || second.preference !== secondCondition.preference) {
+          if (second.type !== secondCondition.type || second.venue !== secondCondition.venue) {
             return false;
           }
           

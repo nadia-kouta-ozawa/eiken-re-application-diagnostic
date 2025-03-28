@@ -150,12 +150,12 @@
 			<fieldset :class="{ 'disabled': firstApp.type === '個人' }">
 				<legend>（３）受験方法の区分を選択してください</legend>
 				<div>
-					<input type="radio" id="firstApplication-preference1" name="firstApplication-preference" value="本" v-model="firstApp.preference" :disabled="firstApp.type === '個人'" />
-					<label for="firstApplication-preference1">本会場 : F日程、本会場日程</label>
+					<input type="radio" id="firstApplication-venue1" name="firstApplication-venue" value="本" v-model="firstApp.venue" :disabled="firstApp.type === '個人'" />
+					<label for="firstApplication-venue1">本会場 : F日程、本会場日程</label>
 				</div>
 				<div>
-					<input type="radio" id="firstApplication-preference2" name="firstApplication-preference" value="準" v-model="firstApp.preference" :disabled="firstApp.type === '個人'" />
-					<label for="firstApplication-preference2">準会場 : A~E日程</label>
+					<input type="radio" id="firstApplication-venue2" name="firstApplication-venue" value="準" v-model="firstApp.venue" :disabled="firstApp.type === '個人'" />
+					<label for="firstApplication-venue2">準会場 : A~E日程</label>
 				</div>
 			</fieldset>
 			<p>2つ目の受験について</p>
@@ -187,12 +187,12 @@
 			<fieldset :class="{ 'disabled': secondApp.type === '個人' }">
 				<legend>（３）受験方法の区分を選択してください</legend>
 				<div>
-					<input type="radio" id="secondApplication-preference1" name="secondApplication-preference" value="本" v-model="secondApp.preference" :disabled="secondApp.type === '個人'" />
-					<label for="secondApplication-preference1">本会場 : F日程、本会場日程</label>
+					<input type="radio" id="secondApplication-venue1" name="secondApplication-venue" value="本" v-model="secondApp.venue" :disabled="secondApp.type === '個人'" />
+					<label for="secondApplication-venue1">本会場 : F日程、本会場日程</label>
 				</div>
 				<div>
-					<input type="radio" id="secondApplication-preference2" name="secondApplication-preference" value="準" v-model="secondApp.preference" :disabled="secondApp.type === '個人'" />
-					<label for="secondApplication-preference2">準会場 : A~E日程</label>
+					<input type="radio" id="secondApplication-venue2" name="secondApplication-venue" value="準" v-model="secondApp.venue" :disabled="secondApp.type === '個人'" />
+					<label for="secondApplication-venue2">準会場 : A~E日程</label>
 				</div>
 			</fieldset>
 
