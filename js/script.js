@@ -177,12 +177,6 @@
           }
           
           console.log('設定された診断結果:', diagnosisResult.value);
-          setTimeout(() => {
-              const answers = document.querySelectorAll('.answer');
-              answers.forEach(el => {
-                  console.log(el, 'display:', window.getComputedStyle(el).display);
-              });
-          }, 300);
 
         } else {
           console.log('該当する診断結果が見つかりませんでした');
