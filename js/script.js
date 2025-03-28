@@ -182,7 +182,7 @@
               answers.forEach(el => {
                   console.log(el, 'display:', window.getComputedStyle(el).display);
               });
-          }, 0);
+          }, 300);
 
         } else {
           console.log('該当する診断結果が見つかりませんでした');
