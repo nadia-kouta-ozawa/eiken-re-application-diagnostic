@@ -113,12 +113,12 @@
 			<fieldset>
 				<legend>年齢を選択してください。</legend>
 				<div>
-					<input type="radio" id="under20" name="age" value="20歳以下" v-model="age" />
+					<input type="radio" id="under20" name="age" value="20才以下" v-model="age" />
 					<label for="under20">20歳以下(2004年4月2日以降生まれ)</label>
 				</div>
 				<div>
-					<input type="radio" id="over20" name="age" value="20歳以上" v-model="age" />
-					<label for="over20">20歳以上(2004年4月1日以前生まれ)</label>
+					<input type="radio" id="over21" name="age" value="21才以上" v-model="age" />
+					<label for="over21">21歳以上(2004年4月1日以前生まれ)</label>
 				</div>
 			</fieldset>
 			<p>1つ目の受験について</p>
@@ -207,34 +207,34 @@
 			<div class="answer" v-show="diagnosisResult === 'ok'">
 				<p>
 					<span>OK</span>
-					併願が可能です。
+					重願が可能です。
 				</p>
 			</div>
 			<!-- NG01 -->
 			<div class="answer" v-show="diagnosisResult === 'ng01'">
 				<p>
-					<span>本-本かぶり</span>
-					本命校同士の併願はできません。
+					<span>NG: 本-本かぶり</span>
+					本命校同士の重願はできません。
 				</p>
 			</div>
 			<!-- NG02 -->
 			<div class="answer" v-show="diagnosisResult === 'ng02'">
 				<p>
-					<span>準-準かぶり</span>
-					準備校同士の併願はできません。
+					<span>NG: 準-準かぶり</span>
+					準備校同士の重願はできません。
 				</p>
 			</div>
 			<!-- NG03 -->
 			<div class="answer" v-show="diagnosisResult === 'ng03'">
 				<p>
-					<span>二次日程かぶり（A）</span>
+					<span>NG: 二次日程かぶり（A）</span>
 					二次試験の日程が重複しています（Aパターン）。
 				</p>
 			</div>
 			<!-- NG04 -->
 			<div class="answer" v-show="diagnosisResult === 'ng04'">
 				<p>
-					<span>二次日程かぶり（B）</span>
+					<span>NG: 二次日程かぶり（B）</span>
 					二次試験の日程が重複しています（Bパターン）。
 				</p>
 			</div>

@@ -33,7 +33,7 @@
           loadError.value = false;
           
           // JSONファイルを読み込む (パスは実際の環境に合わせて調整)
-          const response = await fetch('/js/data.json');
+          const response = await fetch('/api/data.json');
           
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -113,14 +113,6 @@
         return true;
       });
       
-      // 年齢のフォーマット変換
-      const formatAge = (ageValue) => {
-        if (ageValue === '20歳以下') {
-          return '20才以下';
-        } else {
-          return '21才以上';
-        }
-      };
       
       // 診断ロジック - JSONデータと照合
       const diagnose = () => {
@@ -129,7 +121,7 @@
         // 検索条件の作成
         const searchCondition = {
           grade: grade.value,
-          ageGroup: formatAge(age.value),
+          ageGroup: age.value,
           firstApplication: {
             type: firstApp.value.type
           },
