@@ -158,24 +158,32 @@
         // JSONデータと照合
         const result = findDiagnosisResult(searchCondition);
         
-        
         if (result) {
           console.log('診断結果:', result);
           
           if (result.result === 'OK') {
-            diagnosisResult.value = 'ok';
+              diagnosisResult.value = 'ok';
           } else if (result.result === 'NG') {
-            // NGの理由IDから対応する診断結果を設定
-            if (result.reasonId === 1) {
-              diagnosisResult.value = 'ng01';
-            } else if (result.reasonId === 2) {
-              diagnosisResult.value = 'ng02';
-            } else if (result.reasonId === 3) {
-              diagnosisResult.value = 'ng03';
-            } else if (result.reasonId === 4) {
-              diagnosisResult.value = 'ng04';
-            }
+              // NGの理由IDから対応する診断結果を設定
+              if (result.reasonId === 1) {
+                  diagnosisResult.value = 'ng01';
+              } else if (result.reasonId === 2) {
+                  diagnosisResult.value = 'ng02';
+              } else if (result.reasonId === 3) {
+                  diagnosisResult.value = 'ng03';
+              } else if (result.reasonId === 4) {
+                  diagnosisResult.value = 'ng04';
+              }
           }
+          
+          console.log('設定された診断結果:', diagnosisResult.value);
+          setTimeout(() => {
+              const answers = document.querySelectorAll('.answer');
+              answers.forEach(el => {
+                  console.log(el, 'display:', window.getComputedStyle(el).display);
+              });
+          }, 0);
+
         } else {
           console.log('該当する診断結果が見つかりませんでした');
           alert('該当する診断ケースが見つかりませんでした。入力内容をご確認ください。');
