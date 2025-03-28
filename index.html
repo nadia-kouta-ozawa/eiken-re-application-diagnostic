@@ -6,6 +6,16 @@
  <title>重願可否診断ページ</title>
 
  <style>
+		h1 {
+			font-size: 36px;
+		}
+		h2 {
+			font-size: 22px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #999;
+		}
 	.co-app-diagnosis__form {
 			margin-bottom: 30px;
 	}
@@ -95,6 +105,7 @@
 
 	<section id="app" class="co-app-diagnosis">
   <div class="l-inner">
+			<h1>重願可否診断ページ</h1>
    <!-- 診断 -->
 		<form @submit.prevent="diagnose" class="co-app-diagnosis__form" id="diagnosisForm">
 			<!-- 受験級 -->
@@ -121,8 +132,7 @@
 					<label for="over21">21歳以上(2004年4月1日以前生まれ)</label>
 				</div>
 			</fieldset>
-			<p>1つ目の受験について</p>
-			<hr>
+			<h2>1つ目の受験について</h2>
 			<fieldset>
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
@@ -158,8 +168,7 @@
 					<label for="firstApplication-venue2">準会場 : A~E日程</label>
 				</div>
 			</fieldset>
-			<p>2つ目の受験について</p>
-			<hr>
+			<h2>2つ目の受験について</h2>
 			<fieldset>
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
