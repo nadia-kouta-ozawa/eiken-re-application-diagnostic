@@ -125,11 +125,11 @@
 				<legend>年齢を選択してください。</legend>
 				<div>
 					<input type="radio" id="under20" name="age" value="20才以下" v-model="age" />
-					<label for="under20">20歳以下(2004年4月2日以降生まれ)</label>
+					<label for="under20">20歳以下 <small>(2004年4月2日以降生まれ)</small></label>
 				</div>
 				<div>
 					<input type="radio" id="over21" name="age" value="21才以上" v-model="age" />
-					<label for="over21">21歳以上(2004年4月1日以前生まれ)</label>
+					<label for="over21">21歳以上 <small>(2004年4月1日以前生まれ)</small></label>
 				</div>
 			</fieldset>
 			<h2>1つ目の受験について</h2>
@@ -137,11 +137,11 @@
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
 					<input type="radio" id="firstApplication-type1" name="firstApplication-type" value="団体" v-model="firstApp.type" />
-					<label for="firstApplication-type1">団体受験 : 学校や塾で申し込み</label>
+					<label for="firstApplication-type1">団体受験 : <small>学校や塾で申し込み</small></label>
 				</div>
 				<div>
 					<input type="radio" id="firstApplication-type2" name="firstApplication-type" value="個人" v-model="firstApp.type" />
-					<label for="firstApplication-type2">個人受験 : 個人でインターネットやコンビニで申し込み</label>
+					<label for="firstApplication-type2">個人受験 : <small>個人でインターネットやコンビニで申し込み</small></label>
 				</div>
 			</fieldset>
 			<!-- 団体区分のフィールドセット - 常に表示するが個人受験時は非活性 -->
@@ -149,7 +149,7 @@
 				<legend>（２）団体の区分を選択してください</legend>
 				<div>
 					<input type="radio" id="firstApplication-organizationType1" name="firstApplication-organizationType" value="学校" v-model="firstApp.organizationType" :disabled="firstApp.type === '個人'" />
-					<label for="firstApplication-organizationType1">学校など (小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業)</label>
+					<label for="firstApplication-organizationType1">学校など <small>(小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業)</small></label>
 				</div>
 				<div>
 					<input type="radio" id="firstApplication-organizationType2" name="firstApplication-organizationType" value="塾" v-model="firstApp.organizationType" :disabled="firstApp.type === '個人'" />
@@ -161,11 +161,11 @@
 				<legend>（３）受験方法の区分を選択してください</legend>
 				<div>
 					<input type="radio" id="firstApplication-venue1" name="firstApplication-venue" value="本" v-model="firstApp.venue" :disabled="firstApp.type === '個人'" />
-					<label for="firstApplication-venue1">本会場 : F日程、本会場日程</label>
+					<label for="firstApplication-venue1">本会場 : <small>F日程、本会場日程</small></label>
 				</div>
 				<div>
 					<input type="radio" id="firstApplication-venue2" name="firstApplication-venue" value="準" v-model="firstApp.venue" :disabled="firstApp.type === '個人'" />
-					<label for="firstApplication-venue2">準会場 : A~E日程</label>
+					<label for="firstApplication-venue2">準会場 : <small>A~E日程</small></label>
 				</div>
 			</fieldset>
 			<h2>2つ目の受験について</h2>
@@ -173,11 +173,11 @@
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
 					<input type="radio" id="secondApplication-type1" name="secondApplication-type" value="団体" v-model="secondApp.type" />
-					<label for="secondApplication-type1">団体受験 : 学校や塾で申し込み</label>
+					<label for="secondApplication-type1">団体受験 : <small>学校や塾で申し込み</small></label>
 				</div>
 				<div>
 					<input type="radio" id="secondApplication-type2" name="secondApplication-type" value="個人" v-model="secondApp.type" />
-					<label for="secondApplication-type2">個人受験 : 個人でインターネットやコンビニで申し込み</label>
+					<label for="secondApplication-type2">個人受験 : <small>個人でインターネットやコンビニで申し込み</small></label>
 				</div>
 			</fieldset>
 			<!-- 団体区分のフィールドセット - 常に表示するが個人受験時は非活性 -->
@@ -185,7 +185,7 @@
 				<legend>（２）団体の区分を選択してください</legend>
 				<div>
 					<input type="radio" id="secondApplication-organizationType1" name="secondApplication-organizationType" value="学校" v-model="secondApp.organizationType" :disabled="secondApp.type === '個人'" />
-					<label for="secondApplication-organizationType1">学校など (小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業)</label>
+					<label for="secondApplication-organizationType1">学校など <small>(小学校、中学校、高等学校、大学、短大、専修学校、各種学校、官公庁公営企業体、企業)</small></label>
 				</div>
 				<div>
 					<input type="radio" id="secondApplication-organizationType2" name="secondApplication-organizationType" value="塾" v-model="secondApp.organizationType" :disabled="secondApp.type === '個人'" />
@@ -197,11 +197,11 @@
 				<legend>（３）受験方法の区分を選択してください</legend>
 				<div>
 					<input type="radio" id="secondApplication-venue1" name="secondApplication-venue" value="本" v-model="secondApp.venue" :disabled="secondApp.type === '個人'" />
-					<label for="secondApplication-venue1">本会場 : F日程、本会場日程</label>
+					<label for="secondApplication-venue1">本会場 : <small>F日程、本会場日程</small></label>
 				</div>
 				<div>
 					<input type="radio" id="secondApplication-venue2" name="secondApplication-venue" value="準" v-model="secondApp.venue" :disabled="secondApp.type === '個人'" />
-					<label for="secondApplication-venue2">準会場 : A~E日程</label>
+					<label for="secondApplication-venue2">準会場 : <small>A~E日程</small></label>
 				</div>
 			</fieldset>
 
