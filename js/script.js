@@ -47,7 +47,7 @@
           loadError.value = false;
           
           // JSONファイルを読み込む (パスは実際の環境に合わせて調整)
-          const response = await fetch('../api/data.json');
+          const response = await fetch('./api/data.json');
           
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
