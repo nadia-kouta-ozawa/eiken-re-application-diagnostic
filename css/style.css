@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* 見出しスタイル */
+  h1 {
+   font-size: 36px;
+ }
+ 
+ h2 {
+   font-size: 22px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #999;
+ }
+ 
+ /* 診断フォーム */
+ .co-app-diagnosis__form {
+   margin-bottom: 30px;
+   
+   /* ラベルとインプット */
+   label, input {
+     cursor: pointer;
+   }
+   
+   label {
+     font-size: 18px;
+     font-weight: bold;
+     display: flex;
+     gap: 10px;
+     line-height: 1.8;
+   }
+   
+   /* 送信ボタン */
+   .submit-btn {
+     margin-block: 30px;
+     background: linear-gradient(to right, #FF9A9E, #FECFEF);
+     color: #fff;
+     border: none;
+     border-radius: 25px;
+     padding: 12px 30px;
+     font-size: 16px;
+     font-weight: bold;
+     cursor: pointer;
+     box-shadow: 0 4px 15px rgba(255, 154, 158, 0.5);
+     transition: all 0.3s ease;
+     position: relative;
+     overflow: hidden;
+     
+     &:hover:not(:disabled) {
+       transform: translateY(-3px);
+       box-shadow: 0 6px 20px rgba(255, 154, 158, 0.6);
+     }
+     
+     &:active:not(:disabled) {
+       transform: translateY(1px);
+       box-shadow: 0 2px 10px rgba(255, 154, 158, 0.4);
+     }
+     
+     &::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: -100%;
+       width: 100%;
+       height: 100%;
+       background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+       transition: left 0.7s ease;
+     }
+     
+     &:hover:not(:disabled)::before {
+       left: 100%;
+     }
+     
+     /* 非活性状態 */
+     &:disabled {
+       background: linear-gradient(to right, #cccccc, #dddddd);
+       cursor: not-allowed;
+       box-shadow: none;
+       opacity: 0.7;
+     }
+   }
+   
+   /* フィールドセット間の余白 */
+   fieldset + fieldset {
+     margin-top: 30px;
+   }
+ }
+ 
+ /* 診断結果 */
+ .co-app-diagnosis__result {
+   margin-bottom: 110px;
+ }
+ 
+ /* 回答スタイル */
+ .answer {
+   border-radius: 10px;
+   padding: 15px;
+   margin-top: 20px;
+   background-color: #f8f8f8;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   
+   p {
+     margin: 0;
+     font-size: 16px;
+   }
+   
+   span {
+     display: inline-block;
+     margin-right: 10px;
+     padding: 3px 8px;
+     background-color: #ffaab3;
+     color: white;
+     border-radius: 4px;
+     font-weight: bold;
+     font-size: 14px;
+   }
+ }
+ 
+ /* 非活性フィールドセット */
+ fieldset.disabled {
+   opacity: 0.6;
+   background-color: #f5f5f5;
+   
+   input[type="radio"] {
+     cursor: not-allowed;
+   }
+   
+   label {
+     color: #888;
+     cursor: not-allowed;
+   }
+ }
+ 
