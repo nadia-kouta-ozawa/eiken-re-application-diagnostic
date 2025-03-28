@@ -1,5 +1,4 @@
-
-const diagnosisJsonData = {
+{
  "diagnosisPatterns": {
    "ok": [
      {
@@ -32,18 +31,17 @@ const diagnosisJsonData = {
    ]
  },
  "diagnosisResults": [
-	// 2～3級 20才以下のデータ
    {
      "grade": "2～3級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -55,13 +53,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "OK",
@@ -73,13 +71,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "NG",
@@ -91,13 +89,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "NG",
@@ -109,13 +107,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -128,12 +126,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "OK",
@@ -146,13 +144,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "NG",
@@ -165,88 +163,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "準",
-       "schedule": "B"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "NG",
@@ -259,32 +182,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "OK",
@@ -297,13 +201,107 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "個人",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "準",
+       "schedule": "A"
+     },
+     "result": "NG",
+     "reasonId": 3,
+     "reasonName": "二次日程かぶり（A）"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "準",
+       "schedule": "B"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "20才以下",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -316,12 +314,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -334,13 +332,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "NG",
@@ -353,13 +351,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "OK",
@@ -372,13 +370,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "NG",
@@ -391,13 +389,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "OK",
@@ -410,12 +408,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -428,13 +426,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "OK",
@@ -447,13 +445,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "NG",
@@ -466,13 +464,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "NG",
@@ -485,32 +483,30 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
      "reasonId": 1,
      "reasonName": "本-本かぶり"
    },
-   // 2～3級 21才以上のデータ
-// 2～3級 21才以上のデータ
    {
      "grade": "2～3級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -522,13 +518,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "OK",
@@ -540,13 +536,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "NG",
@@ -558,13 +554,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "NG",
@@ -576,13 +572,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -595,12 +591,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "OK",
@@ -613,13 +609,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "NG",
@@ -632,88 +628,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "準",
-       "schedule": "B"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "NG",
@@ -726,32 +647,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "OK",
@@ -764,13 +666,107 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "準",
        "schedule": "A"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "個人",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "準",
+       "schedule": "A"
+     },
+     "result": "NG",
+     "reasonId": 3,
+     "reasonName": "二次日程かぶり（A）"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "準",
+       "schedule": "B"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -783,12 +779,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -801,13 +797,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "A"
      },
      "result": "NG",
@@ -820,13 +816,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "A"
      },
      "result": "OK",
@@ -839,13 +835,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "result": "NG",
@@ -858,88 +854,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "準",
-       "schedule": "A"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "preference": "本",
-       "schedule": "A"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "本",
-       "schedule": "B"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "preference": "準",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
@@ -952,31 +873,105 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "secondApplication": {
+       "type": "個人",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "準",
+       "schedule": "A"
+     },
+     "result": "OK",
+     "reasonId": 1,
+     "reasonName": "重願可能"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "学校",
+       "venue": "本",
+       "schedule": "A"
+     },
+     "result": "NG",
+     "reasonId": 1,
+     "reasonName": "本-本かぶり"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
        "schedule": "B"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "準",
+       "schedule": "B"
+     },
+     "result": "NG",
+     "reasonId": 4,
+     "reasonName": "二次日程かぶり（B）"
+   },
+   {
+     "grade": "2～3級",
+     "ageGroup": "21才以上",
+     "firstApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
+       "schedule": "B"
+     },
+     "secondApplication": {
+       "type": "団体",
+       "organizationType": "塾",
+       "venue": "本",
        "schedule": "B"
      },
      "result": "NG",
      "reasonId": 1,
      "reasonName": "本-本かぶり"
    },
-  // 4・5級 20才以下のデータ
    {
      "grade": "4・5級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -988,13 +983,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1006,13 +1001,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1024,13 +1019,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1042,13 +1037,13 @@ const diagnosisJsonData = {
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1061,12 +1056,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1079,13 +1074,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1098,13 +1093,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1117,13 +1112,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1136,13 +1131,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1155,12 +1150,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1173,13 +1168,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1192,13 +1187,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1211,13 +1206,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1230,13 +1225,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1249,12 +1244,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1267,13 +1262,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1286,13 +1281,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1305,13 +1300,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1324,13 +1319,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1343,12 +1338,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1361,13 +1356,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1380,13 +1375,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1399,13 +1394,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1418,31 +1413,30 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
      "reasonId": 1,
      "reasonName": "本-本かぶり"
    },
-// 4・5級 21才以上のデータ
    {
      "grade": "4・5級",
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1454,13 +1448,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1472,13 +1466,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1490,13 +1484,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1508,13 +1502,13 @@ const diagnosisJsonData = {
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1527,12 +1521,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1545,13 +1539,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1564,13 +1558,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1583,13 +1577,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1602,13 +1596,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1621,12 +1615,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1639,13 +1633,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1658,13 +1652,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1677,13 +1671,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1696,13 +1690,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1715,12 +1709,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1733,13 +1727,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1752,13 +1746,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1771,13 +1765,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "NG",
@@ -1790,13 +1784,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "OK",
@@ -1809,12 +1803,12 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "個人",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1827,13 +1821,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1846,13 +1840,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",
@@ -1865,13 +1859,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "準",
+       "venue": "準",
        "schedule": "-"
      },
      "result": "OK",
@@ -1884,13 +1878,13 @@ const diagnosisJsonData = {
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "preference": "本",
+       "venue": "本",
        "schedule": "-"
      },
      "result": "NG",

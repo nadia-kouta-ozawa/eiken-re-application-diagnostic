@@ -1,48 +1,15 @@
 {
- "diagnosisPatterns": {
-   "ok": [
-     {
-       "id": 1,
-       "name": "重願可能",
-       "description": "併願が可能です。"
-     }
-   ],
-   "ng": [
-     {
-       "id": 1,
-       "name": "本-本かぶり",
-       "description": "本命校同士の併願はできません。"
-     },
-     {
-       "id": 2,
-       "name": "準-準かぶり",
-       "description": "準備校同士の併願はできません。"
-     },
-     {
-       "id": 3,
-       "name": "二次日程かぶり（A）",
-       "description": "二次試験の日程が重複しています（Aパターン）。"
-     },
-     {
-       "id": 4,
-       "name": "二次日程かぶり（B）",
-       "description": "二次試験の日程が重複しています（Bパターン）。"
-     }
-   ]
- },
  "diagnosisResults": [
    {
      "grade": "2～3級",
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -53,14 +20,12 @@
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -71,14 +36,12 @@
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -89,14 +52,12 @@
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 4,
@@ -107,14 +68,12 @@
      "ageGroup": "20才以下",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -126,13 +85,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -144,14 +101,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 3,
@@ -163,14 +118,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 3,
@@ -182,14 +135,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -201,14 +152,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -220,13 +169,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -238,14 +185,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 3,
@@ -257,14 +202,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -276,14 +219,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -295,14 +236,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -314,13 +253,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 4,
@@ -332,14 +269,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 2,
@@ -351,14 +286,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -370,14 +303,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 4,
@@ -389,14 +320,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -408,13 +337,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -426,14 +353,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -445,14 +370,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -464,14 +387,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 4,
@@ -483,14 +404,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -501,13 +420,11 @@
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -518,14 +435,12 @@
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -536,14 +451,12 @@
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -554,14 +467,12 @@
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 4,
@@ -572,14 +483,12 @@
      "ageGroup": "21才以上",
      "firstApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -591,13 +500,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -609,14 +516,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 3,
@@ -628,14 +533,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 3,
@@ -647,14 +550,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -666,14 +567,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -685,13 +584,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -703,14 +600,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 3,
@@ -722,14 +617,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -741,14 +634,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -760,14 +651,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -779,13 +668,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 4,
@@ -797,14 +684,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 2,
@@ -816,14 +701,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "OK",
      "reasonId": 1,
@@ -835,14 +718,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 4,
@@ -854,14 +735,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 4,
@@ -873,13 +752,11 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "個人",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -891,14 +768,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "準",
-       "schedule": "A"
+       "venue": "準"
      },
      "result": "OK",
      "reasonId": 1,
@@ -910,14 +785,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "学校",
-       "venue": "本",
-       "schedule": "A"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
@@ -929,14 +802,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "準",
-       "schedule": "B"
+       "venue": "準"
      },
      "result": "NG",
      "reasonId": 4,
@@ -948,14 +819,12 @@
      "firstApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "secondApplication": {
        "type": "団体",
        "organizationType": "塾",
-       "venue": "本",
-       "schedule": "B"
+       "venue": "本"
      },
      "result": "NG",
      "reasonId": 1,
