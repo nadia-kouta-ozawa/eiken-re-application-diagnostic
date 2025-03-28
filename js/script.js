@@ -62,7 +62,16 @@
       onMounted(() => {
         loadDiagnosisData();
       });
-      
+
+      // フォーム全体の変更を監視、変更されたらanswerクラスを非表示
+      watch(
+        [grade, age, firstApp, secondApp],
+        () => {
+          diagnosisResult.value = '';
+        },
+        { deep: true }
+      );
+
       // 選択タイプが変わったときに関連データをリセット
       watch(() => firstApp.value.type, (newType) => {
         if (newType !== '団体') {
