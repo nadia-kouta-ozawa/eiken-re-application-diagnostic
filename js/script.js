@@ -6,6 +6,7 @@
 
   const { createApp, ref, watch, computed, onMounted } = Vue;
   
+  
   createApp({
     setup() {
       // データ読み込み状態の管理

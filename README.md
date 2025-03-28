@@ -4,21 +4,29 @@
 
 ---
 
-```bash
-使用言語： vue
-
-```
-
-\*\*\* ロジック説明
-
-⭐️ 前提条件
+## 開発環境
 
 ```bash
 
+.
+├── README.md
+├── api
+│   ├── data-sample.json                      ・・・・・サンプルデータ
+│   └── data.json                             ・・・・・照合データ
+├── css
+│   └── style.css                             ・・・・・スタイル
+├── index.html                                ・・・・・トップページ
+└── js
+    ├── libs
+    │   └── vue
+    │       └── 3.5.13
+    │           └── vue.global.prod.min.js    ・・・ vueのglobalパッケージ
+    └── script.js                             ・・・・・スクリプトファイル
+
 
 ```
 
-## 詳細設計
+判定条件の設定
 
 | reasonId | 判定 | 理由                | 値   |
 | -------- | ---- | ------------------- | ---- |
@@ -27,12 +35,3 @@
 | 2        | NG   | 準-準かぶり         | ng02 |
 | 3        | NG   | 二次日程かぶり（A） | ng03 |
 | 4        | NG   | 二次日程かぶり（B） | ng04 |
-
-```bash
-# 診断するボタンを押すと
-<button type="submit" class="submit-btn" :disabled="!isFormValid">
-	診断する
-</button>
-
-# jsonデータから検索して、絞り込む
-```
