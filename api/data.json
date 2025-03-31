@@ -1,1764 +1,1945 @@
 {
  "diagnosisResults": [
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能 確認が必要"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 3,
-     "reasonName": "二次日程かぶり（A）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準"
-     },
-     "result": "NG",
-     "reasonId": 4,
-     "reasonName": "二次日程かぶり（B）"
-   },
-   {
-     "grade": "2～3級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "20才以下",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 2,
-     "reasonName": "準-準かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "個人",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "学校",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "準",
-       "schedule": "-"
-     },
-     "result": "OK",
-     "reasonId": 1,
-     "reasonName": "重願可能"
-   },
-   {
-     "grade": "4・5級",
-     "ageGroup": "21才以上",
-     "firstApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "secondApplication": {
-       "type": "団体",
-       "organizationType": "塾",
-       "venue": "本",
-       "schedule": "-"
-     },
-     "result": "NG",
-     "reasonId": 1,
-     "reasonName": "本-本かぶり"
-   }
+  {
+    "id": 1,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 2,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 3,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 4,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 4,
+    "reasonName": "二次日程かぶり（B）"
+  },
+  {
+    "id": 5,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 6,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": "OK"
+  },
+  {
+    "id": 7,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 8,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 3,
+    "reasonName": "二次日程かぶり（A）"
+  },
+  {
+    "id": 9,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 10,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": "OK"
+  },
+  {
+    "id": 11,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 12,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 3,
+    "reasonName": "二次日程かぶり（A）"
+  },
+  {
+    "id": 13,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 14,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": "OK"
+  },
+  {
+    "id": 15,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 16,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 4,
+    "reasonName": "二次日程かぶり（B）"
+  },
+  {
+    "id": 17,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 18,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 19,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 20,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 4,
+    "reasonName": "二次日程かぶり（B）"
+  },
+  {
+    "id": 21,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 22,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 23,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 24,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 4,
+    "reasonName": "二次日程かぶり（B）"
+  },
+  {
+    "id": 25,
+    "grade": "2～3級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 26,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 27,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 3,
+    "reasonName": "二次日程かぶり（A）"
+  },
+  {
+    "id": 28,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 29,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "OK",
+    "reasonId": 1,
+    "reasonName": ""
+  },
+  {
+    "id": 30,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 31,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 3,
+    "reasonName": "二次日程かぶり（A）"
+  },
+  {
+    "id": 32,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 33,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 3,
+    "reasonName": "二次日程かぶり（A）"
+  },
+  {
+    "id": 34,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 35,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": "OK"
+  },
+  {
+    "id": 36,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 37,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 3,
+    "reasonName": "二次日程かぶり（A）"
+  },
+  {
+    "id": 38,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 39,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": "OK"
+  },
+  {
+    "id": 40,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 41,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "OK",
+    "reasonId": 1,
+    "reasonName": ""
+  },
+  {
+    "id": 42,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 43,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 44,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 45,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 4,
+    "reasonName": "二次日程かぶり（B）"
+  },
+  {
+    "id": 46,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 47,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "A"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 48,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "A"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 49,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 4,
+    "reasonName": "二次日程かぶり（B）"
+  },
+  {
+    "id": 50,
+    "grade": "2～3級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "B"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 51,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 52,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 53,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 54,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 56,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 57,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 58,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 59,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 60,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 61,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 62,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 63,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 64,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 65,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 66,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 67,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 68,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 69,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 70,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 71,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 72,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 73,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 74,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 75,
+    "grade": "4～5級",
+    "ageGroup": "20才以下",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 76,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 77,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 78,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 79,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 80,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 81,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 82,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 83,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 84,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 85,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 86,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 87,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 88,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 89,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 90,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "学校",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 91,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "organizationType": "塾",
+      "venue": "準",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 92,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "学校",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 93,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "学校",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 94,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 2,
+    "reasonName": "準-準かぶり"
+  },
+  {
+    "id": 95,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 96,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "個人",
+      "venue": "本",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 97,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "学校",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 98,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "学校",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  },
+  {
+    "id": 99,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "準",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "result": "OK",
+    "reasonId": 0,
+    "reasonName": ""
+  },
+  {
+    "id": 100,
+    "grade": "4～5級",
+    "ageGroup": "21才以上",
+    "firstApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "secondApplication": {
+      "type": "団体",
+      "venue": "本",
+      "organizationType": "塾",
+      "schedule": "-"
+    },
+    "result": "NG",
+    "reasonId": 1,
+    "reasonName": "本-本かぶり"
+  }
  ]
 }
