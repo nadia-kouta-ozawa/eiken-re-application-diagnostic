@@ -38,7 +38,7 @@
 			</fieldset>
 			
 			<!-- 年齢 -->
-			<fieldset :class="{ 'hidden': !visibleSections.age }">
+			<fieldset :class="{ 'hidden': !visibleSections.age }" v-cloak>
 				<legend>年齢を選択してください。(設問２/４)</legend>
 				<div>
 					<label for="under20">
@@ -55,7 +55,7 @@
 			</fieldset>
 			
 			<!-- 1つ目の受験について -->
-			<div :class="{ 'hidden': !visibleSections.firstApp }">
+			<div :class="{ 'hidden': !visibleSections.firstApp }" v-cloak>
 				<h2>1つ目の受験について(設問３/４)</h2>
 				<fieldset>
 					<legend>（１）受験方法を選択してください</legend>
@@ -109,7 +109,7 @@
 			</div>
 			
 			<!-- 2つ目の受験について -->
-			<div :class="{ 'hidden': !visibleSections.secondApp }">
+			<div :class="{ 'hidden': !visibleSections.secondApp }" v-cloak>
 				<h2>2つ目の受験について(設問４/４)</h2>
 				<fieldset>
 					<legend>（１）受験方法を選択してください</legend>
