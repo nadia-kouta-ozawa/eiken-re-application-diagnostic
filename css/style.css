@@ -2,6 +2,10 @@
 [v-cloak] {
   display: none;
 }
+.hidden {
+  display: none;
+}
+
 /* 見出しスタイル */
   h1 {
    font-size: 36px;
