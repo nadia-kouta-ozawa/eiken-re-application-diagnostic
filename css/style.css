@@ -18,7 +18,9 @@
    padding-bottom: 10px;
    border-bottom: 1px solid #999;
  }
- 
+ .co-app-diagnosis {
+  margin-bottom: 500px;
+ }
  /* 診断フォーム */
  .co-app-diagnosis__form {
    margin-bottom: 30px;
