@@ -1,5 +1,5 @@
 /**
- * @description Vue.jsを使用した申し込み診断アプリケーション。
+ * @description Vue.jsを使用した段階的表示の申し込み診断アプリケーション。
  * ユーザーが入力したデータに基づいて、申し込みの重複可否を診断します。
  */
 (function () {
@@ -11,24 +11,25 @@
     setup() {
       // データ読み込み状態の管理
       const isLoading = ref(true);
-      
       const loadError = ref(false);
-      
       const diagnosisData = ref(null);
-
       const showButton = ref(true);
+      
+      // 表示セクション管理
+      const visibleSections = ref({
+        age: false,
+        firstApp: false,
+        secondApp: false
+      });
       
       // フォームデータ
       const grade = ref('');
-      
       const age = ref('');
-      
       const firstApp = ref({
         type: '',
         organizationType: '',
         venue: ''
       });
-      
       const secondApp = ref({
         type: '',
         organizationType: '',
@@ -79,6 +80,34 @@
       });
 
       /**
+       * 特定のステップを表示する
+       * @param {string} step - 表示するステップ名
+       */
+      const showStep = (step) => {
+        if (step === 'age' && grade.value) {
+          visibleSections.value.age = true;
+        } else if (step === 'firstApp' && age.value) {
+          visibleSections.value.firstApp = true;
+        } else if (step === 'secondApp' && isFirstAppComplete.value) {
+          visibleSections.value.secondApp = true;
+        }
+      };
+      
+      /**
+       * 1つ目の受験の入力状態をチェックし、条件を満たしていれば2つ目の受験に進む
+       */
+      const checkAndProceedToSecondApp = () => {
+        // 個人受験の場合はすぐに次のステップへ
+        if (firstApp.value.type === '個人') {
+          visibleSections.value.secondApp = true;
+        } 
+        // 団体受験の場合は必要項目がすべて入力されていれば次のステップへ
+        else if (firstApp.value.type === '団体' && firstApp.value.organizationType && firstApp.value.venue) {
+          visibleSections.value.secondApp = true;
+        }
+      };
+
+      /**
        * フォーム全体の変更を監視し、変更されたら診断結果をリセット
        */
       watch(
@@ -91,12 +120,35 @@
       );
 
       /**
-       * 1回目申し込みの選択タイプが変わったときに関連データをリセット
+       * 1回目申し込みが完了しているかどうかをチェック
+       */
+      const isFirstAppComplete = computed(() => {
+        if (!firstApp.value.type) {
+          return false;
+        }
+        
+        // 団体受験の場合は団体区分と受験方法区分も必須
+        if (firstApp.value.type === '団体') {
+          if (!firstApp.value.organizationType || !firstApp.value.venue) {
+            return false;
+          }
+        }
+        
+        return true;
+      });
+
+      /**
+       * 1回目申し込みの選択タイプが変わったときに関連データをリセットと次画面表示
        */
       watch(() => firstApp.value.type, (newType) => {
         if (newType !== '団体') {
           firstApp.value.organizationType = '';
           firstApp.value.venue = '';
+        }
+        
+        // 個人受験が選択されたら自動的に次のステップへ
+        if (newType === '個人') {
+          visibleSections.value.secondApp = true;
         }
       });
       
@@ -115,6 +167,11 @@
       watch([() => firstApp.value.organizationType, () => firstApp.value.venue], ([newOrgType, newVenue]) => {
         if ((newOrgType && newOrgType !== '') || (newVenue && newVenue !== '')) {
           firstApp.value.type = '団体';
+        }
+        
+        // 団体受験でかつ必要項目が入力されていれば自動的に次のステップへ
+        if (firstApp.value.type === '団体' && firstApp.value.organizationType && firstApp.value.venue) {
+          checkAndProceedToSecondApp();
         }
       }, { immediate: true });
 
@@ -294,6 +351,9 @@
         diagnosisResult,
         diagnose,
         isFormValid,
+        visibleSections,
+        showStep,
+        isFirstAppComplete,
         showButton
       };
     }
