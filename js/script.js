@@ -273,18 +273,31 @@
         }
       });
 
-      // firstAppの監視を追加
-      // 団体区分か受験方法区分が選択されたら、団体受験を自動選択
-      watch([() => firstApp.value.organizationType, () => firstApp.value.venue], ([newOrgType, newVenue]) => {
-        if ((newOrgType && newOrgType !== '') || (newVenue && newVenue !== '')) {
-          firstApp.value.type = '団体';
-        }
-        
-        // 団体受験でかつ必要項目が入力されていれば自動的に次のステップへ
-        if (firstApp.value.type === '団体' && firstApp.value.organizationType && firstApp.value.venue) {
-          checkAndProceedToSecondApp();
+      // firstAppの監視を更新して、団体区分または受験方法区分が変更された場合も2つ目の受験情報をリセットする
+      watch([() => firstApp.value.organizationType, () => firstApp.value.venue], ([newOrgType, newVenue], [oldOrgType, oldVenue]) => {
+        // 値が実際に変更された場合のみ処理を実行
+        if ((newOrgType !== oldOrgType) || (newVenue !== oldVenue)) {
+          // 値が空でなければ団体受験を自動選択
+          if ((newOrgType && newOrgType !== '') || (newVenue && newVenue !== '')) {
+            firstApp.value.type = '団体';
+          }
+          
+          // 値が変更された場合は2つ目の受験情報をリセット
+          if ((oldOrgType !== '' && newOrgType !== oldOrgType) || 
+              (oldVenue !== '' && newVenue !== oldVenue)) {
+            resetSecondApp();
+            // 診断結果もリセット
+            diagnosisResult.value = '';
+            showButton.value = true;
+          }
+          
+          // 団体受験でかつ必要項目が入力されていれば自動的に次のステップへ
+          if (firstApp.value.type === '団体' && firstApp.value.organizationType && firstApp.value.venue) {
+            checkAndProceedToSecondApp();
+          }
         }
       }, { immediate: true });
+
 
       // secondAppの監視を追加
       // 団体区分か受験方法区分が選択されたら、団体受験を自動選択
