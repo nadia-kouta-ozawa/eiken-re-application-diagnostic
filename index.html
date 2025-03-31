@@ -16,7 +16,7 @@
 		<form @submit.prevent="diagnose" class="co-app-diagnosis__form" id="diagnosisForm">
 			<!-- 受験級 -->
 			<fieldset>
-				<legend>受験級を選択してください。</legend>
+				<legend>受験級を選択してください。(設問１/４)</legend>
 				<div>
 					<label for="g2-3">
 						<input type="radio" id="g2-3" name="grade" value="2～3級" v-model="grade" />
@@ -32,7 +32,7 @@
 			</fieldset>
 			<!-- 年齢 -->
 			<fieldset>
-				<legend>年齢を選択してください。</legend>
+				<legend>年齢を選択してください。(設問２/４)</legend>
 				<div>
 					<label for="under20">
 						<input type="radio" id="under20" name="age" value="20才以下" v-model="age" />
@@ -46,7 +46,7 @@
 				</label>
 				</div>
 			</fieldset>
-			<h2>1つ目の受験について</h2>
+			<h2>1つ目の受験について(設問３/４)</h2>
 			<fieldset>
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
@@ -94,7 +94,7 @@
 					</label>
 				</div>
 			</fieldset>
-			<h2>2つ目の受験について</h2>
+			<h2>2つ目の受験について(設問４/４)</h2>
 			<fieldset>
 				<legend>（１）受験方法を選択してください</legend>
 				<div>
@@ -143,7 +143,7 @@
 				</div>
 			</fieldset>
 
-			<button type="submit" class="submit-btn" :disabled="!isFormValid">
+			<button type="submit" class="submit-btn" :disabled="!isFormValid" v-show="showButton">
 				診断する
 			</button>
 

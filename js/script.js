@@ -15,6 +15,8 @@
       const loadError = ref(false);
       
       const diagnosisData = ref(null);
+
+      const showButton = ref(true);
       
       // フォームデータ
       const grade = ref('');
@@ -83,6 +85,7 @@
         [grade, age, firstApp, secondApp],
         () => {
           diagnosisResult.value = '';
+          showButton.value = true;
         },
         { deep: true }
       );
@@ -106,7 +109,23 @@
           secondApp.value.venue = '';
         }
       });
-      
+
+      // firstAppの監視を追加
+      // 団体区分か受験方法区分が選択されたら、団体受験を自動選択
+      watch([() => firstApp.value.organizationType, () => firstApp.value.venue], ([newOrgType, newVenue]) => {
+        if ((newOrgType && newOrgType !== '') || (newVenue && newVenue !== '')) {
+          firstApp.value.type = '団体';
+        }
+      }, { immediate: true });
+
+      // secondAppの監視を追加
+      // 団体区分か受験方法区分が選択されたら、団体受験を自動選択
+      watch([() => secondApp.value.organizationType, () => secondApp.value.venue], ([newOrgType, newVenue]) => {
+        if ((newOrgType && newOrgType !== '') || (newVenue && newVenue !== '')) {
+          secondApp.value.type = '団体';
+        }
+      }, { immediate: true });
+
       /**
        * フォームが有効かどうかを判定する算出プロパティ
        * すべての必須項目が入力されているかを確認します
@@ -206,6 +225,7 @@
           }
           
           console.log('設定された診断結果:', diagnosisResult.value);
+          showButton.value = false;
 
         } else {
           console.log('該当する診断結果が見つかりませんでした');
@@ -273,7 +293,8 @@
         secondApp,
         diagnosisResult,
         diagnose,
-        isFormValid
+        isFormValid,
+        showButton
       };
     }
   }).mount("#app");
