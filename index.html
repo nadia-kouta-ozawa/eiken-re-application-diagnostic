@@ -148,8 +148,15 @@
 			</button>
 
 		</form>
-    <!-- 診断結果 -->
-    <div class="co-app-diagnosis__result">
+  <!-- 診断結果 -->
+  <div class="co-app-diagnosis__result">
+				<!-- OK -->
+				<div class="answer" v-show="diagnosisResult === ''">
+					<p>
+						<span>項目を選んで「診断する」ボタンを押してください</span><br><br>
+						結果はこちらに表示されます。
+					</p>
+				</div>
 			<!-- OK -->
 			<div class="answer" v-show="diagnosisResult === 'ok'">
 				<p>
