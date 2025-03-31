@@ -96,7 +96,7 @@
  
  /* 診断結果 */
  .co-app-diagnosis__result {
-   margin-bottom: 110px;
+   margin-block: 110px;
  }
  
  /* 回答スタイル */

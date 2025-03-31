@@ -80,16 +80,35 @@
       });
 
       /**
+       * 要素へのスムーススクロール関数
+       * @param {string} elementSelector - スクロール先要素のCSSセレクター
+       */
+      const smoothScrollTo = (elementSelector) => {
+        setTimeout(() => {
+          const element = document.querySelector(elementSelector);
+          if (element) {
+            element.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
+          }
+        }, 100); // 少し遅延させてDOMの更新を待つ
+      };
+
+      /**
        * 特定のステップを表示する
        * @param {string} step - 表示するステップ名
        */
       const showStep = (step) => {
         if (step === 'age' && grade.value) {
           visibleSections.value.age = true;
+          smoothScrollTo('fieldset:nth-of-type(2)'); // 年齢のフィールドセットへスクロール
         } else if (step === 'firstApp' && age.value) {
           visibleSections.value.firstApp = true;
+          smoothScrollTo('div.l-inner > form > div:nth-of-type(1)'); // 1つ目の受験についてへスクロール
         } else if (step === 'secondApp' && isFirstAppComplete.value) {
           visibleSections.value.secondApp = true;
+          smoothScrollTo('div.l-inner > form > div:nth-of-type(2)'); // 2つ目の受験についてへスクロール
         }
       };
       
@@ -100,10 +119,12 @@
         // 個人受験の場合はすぐに次のステップへ
         if (firstApp.value.type === '個人') {
           visibleSections.value.secondApp = true;
+          smoothScrollTo('div.l-inner > form > div:nth-of-type(2)'); // 2つ目の受験についてへスクロール
         } 
         // 団体受験の場合は必要項目がすべて入力されていれば次のステップへ
         else if (firstApp.value.type === '団体' && firstApp.value.organizationType && firstApp.value.venue) {
           visibleSections.value.secondApp = true;
+          smoothScrollTo('div.l-inner > form > div:nth-of-type(2)'); // 2つ目の受験についてへスクロール
         }
       };
 
@@ -234,6 +255,7 @@
           // 個人受験が選択されたら自動的に次のステップへ
           if (newType === '個人') {
             visibleSections.value.secondApp = true;
+            smoothScrollTo('div.l-inner > form > div:nth-of-type(2)'); // 2つ目の受験についてへスクロール
           } else if (oldType !== '') {
             // タイプが変更された（空からの初期選択ではない）場合、2つ目の受験情報をリセット
             resetSecondApp();
@@ -319,6 +341,9 @@
        */
       const diagnose = () => {
         console.log('診断を実行します...');
+
+        // 診断ボタンが押されたら、診断結果要素までスクロール
+        smoothScrollTo('.co-app-diagnosis__result');
         
         // 検索条件の作成
         const searchCondition = {
@@ -372,6 +397,9 @@
           
           console.log('設定された診断結果:', diagnosisResult.value);
           showButton.value = false;
+          
+          // 診断結果へスクロール
+          smoothScrollTo('.co-app-diagnosis__result');
 
         } else {
           console.log('該当する診断結果が見つかりませんでした');
