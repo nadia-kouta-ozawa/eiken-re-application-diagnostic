@@ -38,7 +38,7 @@
 			</fieldset>
 			
 			<!-- 年齢 -->
-			<fieldset :class="{ 'hidden': !visibleSections.age }" v-cloak>
+			<fieldset :class="{ 'hidden': !visibleSections.age }">
 				<legend>年齢を選択してください。(設問２/４)</legend>
 				<div>
 					<label for="under20">
@@ -55,23 +55,23 @@
 			</fieldset>
 			
 			<!-- 1つ目の受験について -->
-			<div :class="{ 'hidden': !visibleSections.firstApp }" v-cloak>
+			<div :class="{ 'hidden': !visibleSections.firstApp }">
 				<h2>1つ目の受験について(設問３/４)</h2>
-				<fieldset>
-					<legend>（１）受験方法を選択してください</legend>
-					<div>
-						<label for="firstApplication-type1">
-							<input type="radio" id="firstApplication-type1" name="firstApplication-type" value="団体" v-model="firstApp.type" />
-							<span>団体受験 : <small>学校や塾で申し込み</small></span>
-						</label>
-					</div>
-					<div>
-						<label for="firstApplication-type2">
-							<input type="radio" id="firstApplication-type2" name="firstApplication-type" value="個人" v-model="firstApp.type" />
-							<span>個人受験 : <small>個人でインターネットやコンビニで申し込み</small></span>
-						</label>
-					</div>
-				</fieldset>
+			<fieldset>
+				<legend>（１）受験方法を選択してください</legend>
+				<div>
+					<label for="firstApplication-type1">
+						<input type="radio" id="firstApplication-type1" name="firstApplication-type" value="団体" v-model="firstApp.type" @change="resetAfterFirstAppChange" />
+						<span>団体受験 : <small>学校や塾で申し込み</small></span>
+					</label>
+				</div>
+				<div>
+					<label for="firstApplication-type2">
+						<input type="radio" id="firstApplication-type2" name="firstApplication-type" value="個人" v-model="firstApp.type" @change="resetAfterFirstAppChange" />
+						<span>個人受験 : <small>個人でインターネットやコンビニで申し込み</small></span>
+					</label>
+				</div>
+			</fieldset>
 				
 				<!-- 団体区分のフィールドセット - 団体受験時のみ表示 -->
 				<fieldset v-if="firstApp.type === '団体'">
@@ -109,7 +109,7 @@
 			</div>
 			
 			<!-- 2つ目の受験について -->
-			<div :class="{ 'hidden': !visibleSections.secondApp }" v-cloak>
+			<div :class="{ 'hidden': !visibleSections.secondApp }">
 				<h2>2つ目の受験について(設問４/４)</h2>
 				<fieldset>
 					<legend>（１）受験方法を選択してください</legend>

@@ -109,15 +109,97 @@
 
       /**
        * フォーム全体の変更を監視し、変更されたら診断結果をリセット
+       * また、特定のフィールドが変更されたら、後続のフィールドをリセット
        */
       watch(
         [grade, age, firstApp, secondApp],
-        () => {
+        (newValues, oldValues) => {
+          // 診断結果とボタン表示をリセット
           diagnosisResult.value = '';
           showButton.value = true;
+          
+          // 受験級が変更された場合、後続のすべての選択をリセット
+          if (newValues[0] !== oldValues[0]) {
+            resetAfterGradeChange();
+          }
+          
+          // 年齢が変更された場合、受験情報をリセット
+          if (newValues[1] !== oldValues[1]) {
+            resetAfterAgeChange();
+          }
+          
+          // 1つ目の受験情報が変更された場合、2つ目の受験情報をリセット
+          if (JSON.stringify(newValues[2]) !== JSON.stringify(oldValues[2])) {
+            resetAfterFirstAppChange();
+          }
         },
         { deep: true }
       );
+      
+      /**
+       * 受験級変更後のリセット処理
+       */
+      const resetAfterGradeChange = () => {
+        // 年齢をリセット
+        age.value = '';
+        
+        // 年齢以降の表示をリセット
+        visibleSections.value.age = false;
+        visibleSections.value.firstApp = false;
+        visibleSections.value.secondApp = false;
+        
+        // 1つ目と2つ目の受験情報をリセット
+        resetFirstApp();
+        resetSecondApp();
+      };
+      
+      /**
+       * 年齢変更後のリセット処理
+       */
+      const resetAfterAgeChange = () => {
+        // 受験情報の表示をリセット
+        visibleSections.value.firstApp = false;
+        visibleSections.value.secondApp = false;
+        
+        // 1つ目と2つ目の受験情報をリセット
+        resetFirstApp();
+        resetSecondApp();
+      };
+      
+      /**
+       * 1つ目の受験情報変更後のリセット処理
+       */
+      const resetAfterFirstAppChange = () => {
+        // 2つ目の受験情報の表示をリセット（ただし個人受験を選択した場合を除く）
+        if (firstApp.value.type !== '個人') {
+          visibleSections.value.secondApp = false;
+        }
+        
+        // 2つ目の受験情報をリセット
+        resetSecondApp();
+        
+        // 診断結果を非表示
+        diagnosisResult.value = '';
+        showButton.value = true;
+      };
+      
+      /**
+       * 1つ目の受験情報をリセット
+       */
+      const resetFirstApp = () => {
+        firstApp.value.type = '';
+        firstApp.value.organizationType = '';
+        firstApp.value.venue = '';
+      };
+      
+      /**
+       * 2つ目の受験情報をリセット
+       */
+      const resetSecondApp = () => {
+        secondApp.value.type = '';
+        secondApp.value.organizationType = '';
+        secondApp.value.venue = '';
+      };
 
       /**
        * 1回目申し込みが完了しているかどうかをチェック
@@ -140,15 +222,22 @@
       /**
        * 1回目申し込みの選択タイプが変わったときに関連データをリセットと次画面表示
        */
-      watch(() => firstApp.value.type, (newType) => {
-        if (newType !== '団体') {
-          firstApp.value.organizationType = '';
-          firstApp.value.venue = '';
-        }
-        
-        // 個人受験が選択されたら自動的に次のステップへ
-        if (newType === '個人') {
-          visibleSections.value.secondApp = true;
+      watch(() => firstApp.value.type, (newType, oldType) => {
+        // タイプが変わった場合のみ処理
+        if (newType !== oldType) {
+          // 団体受験以外を選択した場合は関連フィールドをリセット
+          if (newType !== '団体') {
+            firstApp.value.organizationType = '';
+            firstApp.value.venue = '';
+          }
+          
+          // 個人受験が選択されたら自動的に次のステップへ
+          if (newType === '個人') {
+            visibleSections.value.secondApp = true;
+          } else if (oldType !== '') {
+            // タイプが変更された（空からの初期選択ではない）場合、2つ目の受験情報をリセット
+            resetSecondApp();
+          }
         }
       });
       
@@ -354,7 +443,10 @@
         visibleSections,
         showStep,
         isFirstAppComplete,
-        showButton
+        showButton,
+        resetAfterGradeChange,
+        resetAfterAgeChange,
+        resetAfterFirstAppChange
       };
     }
   }).mount("#app");
