@@ -15,6 +15,9 @@
       const diagnosisData = ref(null);
       const showButton = ref(true);
       
+      // 診断の開始状態を管理
+      const diagnosisStarted = ref(false);
+      
       // 表示セクション管理
       const visibleSections = ref({
         age: false,
@@ -37,6 +40,17 @@
       });
       
       const diagnosisResult = ref('');
+      
+      /**
+       * 診断開始ボタンをクリックした時の処理
+       * @function
+       * @returns {void}
+       */
+      const startDiagnosis = () => {
+        diagnosisStarted.value = true;
+        // 診断フォームへスクロール
+        smoothScrollTo('.co-app-diagnosis__form');
+      };
       
       /**
        * JSONデータを読み込む非同期関数
@@ -486,7 +500,9 @@
         showButton,
         resetAfterGradeChange,
         resetAfterAgeChange,
-        resetAfterFirstAppChange
+        resetAfterFirstAppChange,
+        startDiagnosis,
+        diagnosisStarted
       };
     }
   }).mount("#app");

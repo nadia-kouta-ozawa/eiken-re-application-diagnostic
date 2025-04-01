@@ -12,8 +12,12 @@
 	<section id="app" class="co-app-diagnosis">
   <div class="l-inner">
 			<h1>重願可否診断ページ</h1>
+
+			<!-- 診断開始ボタン -->
+   <button class="start-btn" @click="startDiagnosis" v-if="!diagnosisStarted">診断を開始する</button>
+   
    <!-- 診断 -->
-		<form @submit.prevent="diagnose" class="co-app-diagnosis__form" id="diagnosisForm">
+		<form @submit.prevent="diagnose" class="co-app-diagnosis__form" id="diagnosisForm" v-cloak v-show="diagnosisStarted">
 			<!-- 受験級 -->
 			<fieldset>
 				<legend>受験級を選択してください。(設問１/４)</legend>
@@ -162,7 +166,7 @@
 		</form>
 		
   <!-- 診断結果 -->
-  <div class="co-app-diagnosis__result" v-cloak>
+  <div class="co-app-diagnosis__result" v-cloak v-show="diagnosisStarted">
 				<!-- OK -->
 				<div class="answer" v-show="diagnosisResult === ''">
 					<p>
