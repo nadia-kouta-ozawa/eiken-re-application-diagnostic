@@ -65,7 +65,7 @@
           console.error('データの読み込みエラー:', error);
           loadError.value = true;
           
-          // エラー時のフォールバックデータ (オプション)
+          // エラー時のフォールバックデータ
           diagnosisData.value = {
             "diagnosisResults": []
           };
@@ -309,7 +309,6 @@
 
       /**
        * フォームが有効かどうかを判定する算出プロパティ
-       * すべての必須項目が入力されているかを確認します
        * @type {import('vue').ComputedRef<boolean>}
        */
       const isFormValid = computed(() => {
